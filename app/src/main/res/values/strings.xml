@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LoveStudy</string>
+    <string-array name="home_title"><item>java学习</item>
+        <item>html学习</item>
+        <item>c语言学习</item>
+        <item>c++测试</item>
+    </string-array>
+</resources>

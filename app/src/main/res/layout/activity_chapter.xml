@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--
+    <VideoView
+        android:id="@+id/chapter_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+        -->
+        <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+            android:id="@+id/videoplayer"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/videoplayer"
+            android:orientation="vertical">
+
+            <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+                android:id="@+id/stickyListHeadersListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <se.emilsjolander.stickylistheaders.ExpandableStickyListHeadersListView
+                android:id="@+id/expandableStickyListHeadersListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
+
+
+
+

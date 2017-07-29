@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_lovestudy" default="compile.module.lovestudy">
+  <dirname property="module.lovestudy.basedir" file="${ant.file.module_lovestudy}"/>
+  
+  <property name="module.jdk.home.lovestudy" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.lovestudy" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.lovestudy" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.lovestudy" value="-encoding UTF-8 -source 1.7 -target 1.7 ${compiler.args}"/>
+  
+  <property name="lovestudy.output.dir" value="${module.lovestudy.basedir}/build/classes/production/LoveStudy"/>
+  <property name="lovestudy.testoutput.dir" value="${module.lovestudy.basedir}/build/classes/test/LoveStudy"/>
+  
+  <path id="lovestudy.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="lovestudy.module.production.classpath">
+    <path refid="${module.jdk.classpath.lovestudy}"/>
+  </path>
+  
+  <path id="lovestudy.runtime.production.module.classpath">
+    <pathelement location="${lovestudy.output.dir}"/>
+  </path>
+  
+  <path id="lovestudy.module.classpath">
+    <path refid="${module.jdk.classpath.lovestudy}"/>
+    <pathelement location="${lovestudy.output.dir}"/>
+  </path>
+  
+  <path id="lovestudy.runtime.module.classpath">
+    <pathelement location="${lovestudy.testoutput.dir}"/>
+    <pathelement location="${lovestudy.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.lovestudy">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.lovestudy">
+    <patternset refid="excluded.from.module.lovestudy"/>
+  </patternset>
+  
+  
+  <target name="compile.module.lovestudy" depends="compile.module.lovestudy.production,compile.module.lovestudy.tests" description="Compile module LoveStudy"/>
+  
+  <target name="compile.module.lovestudy.production" depends="register.custom.compilers" description="Compile module LoveStudy; production classes"/>
+  
+  <target name="compile.module.lovestudy.tests" depends="register.custom.compilers,compile.module.lovestudy.production" description="compile module LoveStudy; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.lovestudy" description="cleanup module">
+    <delete dir="${lovestudy.output.dir}"/>
+    <delete dir="${lovestudy.testoutput.dir}"/>
+  </target>
+</project>

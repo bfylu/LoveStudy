@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_home_activict"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="剩余"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/tv_memory_info" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/menu_more_icon"
+            android:id="@+id/button_btn"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="全部开始" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/button2"
+            android:text="全部暂停" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/button3"
+            android:text="删除" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff">
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:background="#fff"
+            android:src="@mipmap/no_downloaded">
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="暂无下载内容"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/abc_btn_rating_star_off_mtrl_alpha"
+            android:background="#2ba5ce"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="课程推荐"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多课程"
+            android:textColor="#ADADAD"
+            android:textSize="12dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:id="@+id/geng_btn"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

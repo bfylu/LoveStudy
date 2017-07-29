@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.example.mukewang.Welcome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/tz2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击跳过:"
+            android:textColor="#7b7b7b"
+            android:textSize="15sp"
+            android:id="@+id/taizhuang"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3秒"
+            android:textColor="#ff5151"
+            android:textSize="15sp"
+            android:id="@+id/miashu"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/b">
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#7b7b7b"
+            android:textSize="10sp"
+            android:text="Copyright © 2017 xuekewang"/>
+    </LinearLayout>
+</LinearLayout>

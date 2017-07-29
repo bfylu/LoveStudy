@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/gridview_item_title"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="LinearLayout dhajhdj"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="#0f0"/>
+        <TextView
+            android:id="@+id/gridview_item_title2"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="星级评分原里和实现"
+            android:paddingLeft="20dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/gridview_item_contant"
+            android:layout_weight="1.2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="内容学习，啥后果哈桑和回到花果山查不出"
+            android:textSize="10sp"
+            android:paddingLeft="20dp"
+             />
+
+        <TextView
+            android:id="@+id/gridview_item_pepolenum"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="kjjjkj"
+            android:textSize="12sp"
+            android:paddingLeft="20dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

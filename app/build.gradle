@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.example.bfy.lovestudy"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //支持RecyclerView,View, ScrollView, ListView, GridView下拉刷新,上拉加载更多,上拉自动加载更多.
+    compile 'com.qbw.customview:refreshloadmorelayout:2.3.0-beta2'
+    //视频
+    compile 'fm.jiecao:jiecaovideoplayer:5.5.4'
+    //图片加载库Glide
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    // Glide's OkHttp3 Integration
+    compile 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
+
+    //网络请求OkHttp
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    //GSON
+    compile 'com.google.code.gson:gson:2.7'
+
+    //StickyListHeaders,listview
+    compile 'se.emilsjolander:stickylistheaders:2.7.0'
+
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    testCompile 'junit:junit:4.12'
+
+    //OkHttp
+    compile 'com.zhy:okhttputils:2.6.2'
+    //沉静式
+    compile 'com.gyf.barlibrary:barlibrary:2.2.4'
+
+    compile 'com.xhb:xbanner:1.2.7'//将latestVersion替换成上面最新的版本号
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'jp.wasabeef:glide-transformations:1.0.6'
+
+}

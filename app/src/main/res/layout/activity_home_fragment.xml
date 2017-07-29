@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.stx.xhb.xbanner.XBanner
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:AutoPlayTime="3000"
+        app:pointsContainerBackground="#44aaaaaa"
+        app:pointNormal="@mipmap/b2"
+        app:pointSelect="@mipmap/b1"
+        app:pointsPosition="RIGHT"
+        app:tipTextSize="12sp"
+        app:isShowNumberIndicator="true"
+        app:isShowIndicatorOnlyOne="true"
+        app:pageChangeDuration="1000"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+        <!--实战-->
+        <LinearLayout
+            android:id="@+id/home_top_shizhan"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:paddingTop="5dp"
+                android:layout_weight="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@mipmap/home1"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="实战"
+                android:textSize="10sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        <!--路径-->
+        <LinearLayout
+            android:id="@+id/home_top_lujing"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:paddingTop="5dp"
+                android:layout_weight="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@mipmap/home2"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="路径"
+                android:textSize="10sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        <!--问题-->
+        <LinearLayout
+            android:id="@+id/home_top_wenti"
+            android:paddingTop="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_weight="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@mipmap/home4"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="问题"
+                android:textSize="10sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        <!--笔记-->
+        <LinearLayout
+            android:id="@+id/home_top_biji"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:paddingTop="5dp"
+                android:layout_weight="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@mipmap/home3"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="笔记"
+                android:textSize="10sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="#4ccc">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@mipmap/kecheng"
+                    android:background="#4486f0"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="课程学习"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/home_android_huanyihuan"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="10sp"
+                android:gravity="center_vertical|right"
+                android:paddingRight="20dp"/>
+
+        </LinearLayout>
+
+
+
+        <com.example.bfy.lovestudy.view.Mylistview
+            android:id="@+id/mu_ke_status_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
